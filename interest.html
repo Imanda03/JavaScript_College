@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.open();
+        var pri = parseInt(prompt('Enter the principle'));
+        var rate = parseFloat(prompt('Enter the rate'));
+        var time = parseInt(prompt('Enter the time'));
+        document.write('The principle is '+pri+'<br/>');
+        document.write('The rate of interesrt is '+rate+'<br/>');
+        document.write('The time is '+time+'<br/>');
+
+        var interest =(pri*rate*time)/100;
+        document.write('The simple interest is '+interest);
+        console.log(interest);
+        document.close();
+    </script>
+    
+</body>
+</html>
