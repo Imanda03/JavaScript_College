@@ -7,16 +7,15 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Shopping list</h1>
+    
     <script>
-        var num = [];
-        for(let i=0; i<5; i++){
-            num[i] = parseInt(prompt('Enter the number'));
+        const listShopping = ['Shirt', 'Shirt', 'Pant', 'Shoes'];
+        for(i=0;i<listShopping.length; i++){
+            document.write('<li>' +listShopping[i]+'</li>');
         }
-        document.write("The number are : <br>");
-        for(let i=0; i<5; i++){
-            document.write(num[i] + "<br/>");
-        }
-   
+        
     </script>
+    
 </body>
 </html>
