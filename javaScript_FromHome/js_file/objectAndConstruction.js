@@ -20,6 +20,7 @@ function GeneralCar(givenName,speed){
     }
 }
     car1 = new GeneralCar('Nissan',180);
-    car2 = new GeneralCar('Marurus Alto',80);
+    car2 = new GeneralCar
+    ('Marurus Alto',80);
     car3 = new GeneralCar('Mercedes',200);
     console.log(car1,car2,car3);
