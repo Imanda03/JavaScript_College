@@ -40,9 +40,11 @@ Example:  function myFunction() {
 function info(){
     let name = 'Earth';
     const age = 39;
-    var color = 'blue'
+    var color = 'blue';
+    return name;
+    console.log(name);
 }
-// console.log(color);          //this is wrong. We cannot get output
+// console.log(name);          
 
 let animal = 'cat';
 function animals(){
