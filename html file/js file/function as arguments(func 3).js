@@ -16,3 +16,17 @@ function alsoMe(){
 
 
 /* here function call the other function as argument or paramenters */
+
+
+
+//Function returning a function
+
+function mul (num){
+    return function(a){
+        return a * num;
+    }
+}
+const triple = mul(3);
+console.log(triple(5));
+const double = mul(2);
+console.log(double(6));
