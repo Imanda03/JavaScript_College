@@ -7,7 +7,7 @@ number.forEach(function(num){
 
 
 console.log('another function');
-printTriple = (n) =>{
+printTriple = (n) =>{                               //Arrow function
     console.log(n * 3);
 }
 

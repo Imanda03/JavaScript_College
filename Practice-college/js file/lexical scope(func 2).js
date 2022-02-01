@@ -1,7 +1,7 @@
 function outer(){
     let movie = 'Hulk';
     function inner(){
-        // let movie = 'Kabadi';       //Uncommet and see the result--> This gonna be print
+        let movie = 'Kabadi';       //Uncommet and see the result--> This gonna be print
         console.log(movie.toUpperCase());
     }
     inner();
