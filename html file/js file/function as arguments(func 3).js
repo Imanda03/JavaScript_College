@@ -30,3 +30,23 @@ const triple = mul(3);
 console.log(triple(5));
 const double = mul(2);
 console.log(double(6));
+
+
+
+function fu (firstNum,lastNum){
+    return function(number){
+        return number >= firstNum && number <=lastNum;
+    }
+}
+const range = fu(0,50);
+console.log(range(5));
+console.log(range(55))
+
+//In arrow function
+const fun = (a,b) =>{
+    return (numb) => {
+        return numb >=a && numb <=b;
+    }
+}
+const ran = fun(0,50);
+console.log(ran(50));
