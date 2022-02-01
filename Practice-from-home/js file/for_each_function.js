@@ -16,5 +16,5 @@ number.forEach(printTriple);
 
 const numb = [20,30,40,10,5];
 number.forEach(function(numm,index){
-    console.log(numm + '  '+ 'index: '+index);
+    console.log(numm + ' at '+ 'index: '+index);
 });
