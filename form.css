@@ -1,6 +1,11 @@
+body{
+    color: #ffffff;
+    background: url(/photo/peaky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .peaky{
     display: flex;
-}
-input{
-    margin: 5px ;
 }
