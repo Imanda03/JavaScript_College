@@ -9,3 +9,6 @@ body{
 .peaky{
     display: flex;
 }
+#ul{
+    display: flex;
+}
