@@ -5,28 +5,30 @@
     // })
     
     // Incresing the number on click
-    // let displayElem = document.querySelector('#increase');
-    // let incrElem = document.querySelector('#btn');
-    // let count = 0;
+    let displayElem = document.querySelector('#increase');
+    let incrElem = document.querySelector('#btn');
+    let decrElem = document.querySelector('#btn2');
+    let count = 0;
 
-    // updateDisplay();
+    updateDisplay();
 
-    // incrElem.addEventListener('click',()=>{
-    //     count++;
-    //     updateDisplay();
-    // });
+    incrElem.addEventListener('click',()=>{
+        count++;
+        updateDisplay();
+    });
 
-    // function updateDisplay(){
-    //     displayElem.innerHTML = count;
-    // }
+    decrElem.addEventListener('click',()=>{
+        count--;
+        updateDisplay();
+    });
 
-    // let reset = document.querySelector('#reset');
+    function updateDisplay(){
+        displayElem.innerHTML = count;
+    }
 
-    // reset.addEventListener('click',()=>{
-    //     count = 0;
-    //     updateDisplay();
-    // })
+    let reset = document.querySelector('#reset');
 
-    let num = document.querySelector('#increase');
-    let btn = document.querySelector('#btn');
-    let btn2 = document.querySelector('#reset');
+    reset.addEventListener('click',()=>{
+        count = 0;
+        updateDisplay();
+    })
