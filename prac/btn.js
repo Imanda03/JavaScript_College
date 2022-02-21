@@ -1,8 +1,8 @@
-// let btn = document.getElementById('btn');
+// // let btn = document.getElementById('btn');
 
-// btn.addEventListener('click',()=>{
-    //     alert('You have been click message');
-    // })
+// // btn.addEventListener('click',()=>{
+//     //     alert('You have been click message');
+//     // })
     
     // Incresing the number on click
     let displayElem = document.querySelector('#increase');
@@ -32,3 +32,4 @@
         count = 0;
         updateDisplay();
     })
+
