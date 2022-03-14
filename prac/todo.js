@@ -13,12 +13,12 @@ form.addEventListener('submit', (e) => {
 })
 
 function createIteam(item) {
-    if (text.value.length > 0) {
-        let html = `<li class="list-item">${item}<button id="${index}" click="deleteIt(this.id)" class="btn delete">Delete</button></li>`
-        list.insertAdjacentHTML('beforeend', html);
-        text.value = "";
-        text.focus();
-    }
+
+    let html = `<li class="list-item">${item}<button id="${index}" click="deleteIt(this.id)" class="btn delete">Delete</button></li>`
+    list.insertAdjacentHTML('beforeend', html);
+    text.value = "";
+    text.focus();
+
 }
 
 list.addEventListener('click', (e) => {
