@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Output to Side</title>
-</head>
+  </head>
 
-<body>
-    <div class="container">
-        <input type="text" id="text" placeholder="Tyoe Here">
-        <output id="output" class="output"></output>
+  <body>
+    <div class="main">
+      <form action="" class="formFormate">
+        <table id="table">
+          <tr>
+            <td>
+              <input type="text" id="text" placeholder="Tyoe Here" />
+            </td>
+            <td><output id="out1" class="output"></output></td>
+          </tr>
+          <tr>
+              <td>
+                  <label for="check">Tick</label>
+                  <input type="checkbox" id="check1" name="checkBox" value="true">
+                  <input type="checkbox" id="check2" name="checkBox" value="false">
+              </td>
+              <td><output id="out3" class="output"></output></td>
+          </tr>
+          <tr>
+            <td>
+                <label for="gende">Choose your gender</label>
+              <input class="radio" type="radio" name="gender" value="male" />
+              Male
+              <input class="radio" type="radio" name="gender" value="female" />
+              Female
+            </td>
+            <td><output id="out2" class="output"></output></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="cars">Choose city:</label>
+              <select name="city" id="city">
+                <option name="city" value="pokhara" selected>Pokhara</option>
+                <option name="city" value="kathmandu">Kathmandu</option>
+                <option name="city" value="nuwakot">Nuwakot</option>
+              </select>
+            </td>
+            <td><output id="out4" class="output"></output></td>
+          </tr>
+        </table>
+        <br />
+        <button id="button">Submit</button>
+      </form>
     </div>
-
-    <input class="radio" type="radio" name="gender" value="male"> Male
-    <input class="radio" type="radio" name="gender" value="female"> Female
-    <output id="output1" class="output"></output>
-
-    <br>
-    <label for="cars">Choose city:</label>
-    <select name="city" id="city">
-        <option value="pokhara">Pokhara</option>
-        <option value="kathmandu">Kathmandu</option>
-        <option value="nuwakot">Nuwakot</option>
-    </select>
-
-    <br>
-    <button id="button">Submit</button>
-
     <script src="side.js"></script>
-</body>
-
+  </body>
 </html>
