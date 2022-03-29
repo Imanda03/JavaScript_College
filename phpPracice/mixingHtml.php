@@ -3,10 +3,10 @@
        ["title" => "first post", 
        "content" => "This is the first post"],
 
-       ["second" => "second post",
+       ["title" => "second post",
         "content" => "This is the second post"],
 
-        ["third" => "Read this",
+        ["title" => "Read this",
         "content" => "You must read this now"]
     ];
 
@@ -23,8 +23,7 @@
         <main>
             <ul>
                 <?php
-                    foreach($articles as $article);
-                ?>
+                    foreach($articles as $article): ?>
                 <li>
                     <article>
                         <h2>
@@ -35,6 +34,7 @@
                         </p>
                     </article>
                 </li>
+                <?php endforeach;?>
             </ul>
         </main>
             
