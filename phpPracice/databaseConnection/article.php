@@ -15,7 +15,7 @@
 
     $sql = " SELECT *
     FROM cms_www
-    ORDER BY published_at";
+    WHERE id = " . $_GET['id'];
 
     $result = mysqli_query($conn,$sql);
 
@@ -24,7 +24,7 @@
     if ( $result === false) {
         echo mysqli_error($conn);
     } else {
-        $cms_www = mysqli_fetch_all($result,MYSQLI_ASSOC);
+        $cms_www = mysqli_fetch_assoc($result);
     }
     
     
@@ -32,18 +32,12 @@
 <html>
 
     <body>
-        <?php if(empty($cms_www)):?>
+        <?php if($cms_www === NULL):?>
             <p>article not found</p>
             <?php else: ?>
-            <ul>
-                <?php foreach ($cms_www as $article): ?>
-                <li>
                     
-                    <h2><a href="article.php?id=<?= $article['id'];?>"><?= $article["title"];?></a></h2> 
-                    <p><?= $article["content"];?></p>
-                </li>
-                <?php endforeach; ?>
-            </ul>
+                    <h2> <?= $cms_www["title"];?>  </h2> 
+                    <p><?= $cms_www["content"];?></p> 
             <?php endif; ?>
         </body>
         </html>
