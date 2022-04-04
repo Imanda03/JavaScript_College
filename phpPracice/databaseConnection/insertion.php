@@ -1,11 +1,11 @@
 <?php 
     if($_SERVER["REQUEST_METHOD"]=="POST"){
-        require "connection.php"
+        require "connection.php";
 
-        $sql_"INSERT INTO cns_www(title,content,published); 
-            VALUES( '" .$_POST['tirle'] . "'
-            '".$_POST['content'] . "'
-            '".$_POST['published_at'] . "')";
+        $sql = "INSERT INTO cms_www (title, content, published_at)
+                VALUES ('" . $_POST['title'] ."' , '" . $_POST['content'] . "', '" . $_POST['published_at'] ."')
+        
+            ";
 
             $result = mysqli_query($conn,$sql);
 
