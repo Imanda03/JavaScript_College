@@ -18,8 +18,6 @@ function display(){
     value.innerHTML=count;
 }
 
-
-
 buttons.forEach(function (btn) {
     btn.addEventListener('click',function(e){
         const id = e.currentTarget.attributes.id.value;
