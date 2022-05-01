@@ -1,0 +1,28 @@
+input{
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+    margin: 10px 0;
+    min-width: fit-content;
+    /* display: flex; */
+}
+
+input:focus{
+    border-width: 0 0 2px;
+    border-color: skyblue; 
+}
+::placeholder{
+    font-size: small;
+    font-style: italic;
+}
+form{
+    font-family: 'Times New Roman', Times, serif;
+}
+.form{
+    line-height: 10px;
+}
+
+select {
+    outline: 0;
+    border-width: 0 0 2px;
+   }
