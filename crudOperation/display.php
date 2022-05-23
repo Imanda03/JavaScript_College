@@ -40,7 +40,7 @@
                         <td><?php echo $result['username'] ?></td>
                         <td><?php echo $result['password'] ?>sword</td>
                         <td> <button> <a href="delete.php?id= <?php echo $result['id'] ?>">delete </a> </button></td>
-                        <td><button> <a href="update.php?id= <?php echo $result['id'] ?>"> </a> update </button></td>
+                        <td><button> <a href="update.php?id= <?php echo $result['id'] ?>"> update  </a></button></td>
                     </tr>
                     <?php } ?>
                 </table>
