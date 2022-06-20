@@ -11,7 +11,7 @@ console.log('Weolcome to promise()');
 //             else {
 //                 console.log('Function: Your promise has not been redolved');
 //                 reject('Sorrry not fulfilled');
-//             }
+//             }    
 
 //         })
 
