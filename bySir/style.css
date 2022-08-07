@@ -7,15 +7,15 @@
 body{
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* background: linear-gradient(rgb(9, 105, 112),rgb(32, 100, 146)); */
+    background: linear-gradient(rgb(9, 105, 112),rgb(32, 100, 146));
     font-size: 20px;
-    /* color: rgb(104, 229, 238); */
+    color: rgb(104, 229, 238);
 }
 .container{
     max-width: 960px;
     margin: 0 auto;
     padding: 5%;
-    /* outline: 1px solid green; */
+    outline: 1px solid green;
    
 }
 
@@ -30,7 +30,7 @@ body{
     font-size: 50px;
     margin-bottom: 30px;
     text-align: center;
-    /* color: rgb(104, 229, 238); */
+    color: rgb(104, 229, 238);
 }
 
 .container input[type=text]{
@@ -42,7 +42,7 @@ body{
     width: 350px;
     margin-bottom: 100px;
     font-size: 20px;
-    /* background: rgb(4, 75, 80); */
+    background: rgb(4, 75, 80);
     color: inherit;
 }
 
@@ -73,7 +73,7 @@ background-color: rgb(82, 2, 2);
 }
 .list{
     list-style: none;
-    /* outline: 1px solid #fff; */
+    outline: 1px solid #fff;
     display: flex;
     flex-direction: column;  
     outline: 1px solid rgb(4, 148, 158);

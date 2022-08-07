@@ -13,19 +13,19 @@ const down = document.querySelectorAll('option[name=city]');
 
 // console.log(radios);
 radios.forEach(rad => {
-    rad.addEventListener("click",func2)
+    rad.addEventListener("click", func2)
 });
 
 // console.log(check);
 check.forEach(check => {
-    check.addEventListener('click',func3)
+    check.addEventListener('click', func3)
 })
 
 console.log(down);
 console.dir(down)
-down.forEach(choose =>{
-    choose.addEventListener('click',func4)
-})
+// down.forEach(choose =>{
+//     choose.addEventListener('click',func4)
+// })
 
 function func1(e) {
     e.preventDefault();
@@ -43,6 +43,6 @@ function func4(e) {
 }
 
 btn.addEventListener('click', func1);
-btn.addEventListener('click',func2)
-btn.addEventListener('click',func3)
-btn.addEventListener('click',func4)
+btn.addEventListener('click', func2)
+btn.addEventListener('click', func3)
+btn.addEventListener('click', func4)
